@@ -1,0 +1,30 @@
+# Site settings
+title: Han Feng
+logo: /img/hf-logo.svg
+email: design@hanfeng.com
+description: > # this means to ignore newlines until "baseurl:"
+  Personal website of Designer Han Feng
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.hanfeng.com/" # the base hostname & protocol for your site
+twitter_username:
+instagram_username: hanfenghavefun
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
+
+#Exclude files
+exclude: [node_modules, gulpfile.js]
+
+collections:
+  _albums:
+  designs:
+    permalink: /designs/:path/
+  projects:
+    output: true
+    permalink: /portfolio/:path/
+    defaults:
+      values:
+        layout: project

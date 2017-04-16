@@ -1,0 +1,155 @@
+body.lightning {
+  background: url(/img/hf-studio.jpg) no-repeat 80% center fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+img.nav-icon {
+  width: 24px;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+#name-header {
+  letter-spacing: .2rem;
+}
+
+.musigner {
+  position: relative;
+}
+#musician {
+  color: #F01616;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+#musigner-3 {
+  position: absolute;
+  color: #1797b0;
+  mix-blend-mode: multiply;
+  top: 0;
+  opacity: 1;
+  // left: 200px;
+  // animation: tilt $duration $timing alternate infinite;
+  // animation: slide $duration*12 $timing alternate infinite;
+}
+
+hr {
+  box-sizing:border-box;
+  margin-top:16px;
+  margin-bottom:16px;
+  border:0;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:rgba(0, 0, 0, .25);
+  border-width:1px;
+  border-color:currentcolor;
+  // margin-left:32px;
+  // margin-right:32px;
+}
+
+p {
+  font-weight: 300;
+}
+
+.post-content {
+  img {
+
+  }
+  p {
+    padding-bottom: 1.5rem;
+  }
+}
+
+#red-link {
+  color: $red;
+  // text-decoration: underline;
+  border-bottom: 2px solid $red;
+}
+
+#lightning {
+
+}
+
+.fade-in {
+  transition: all .6s;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// BEME STYLES
+
+.clip-strip {
+    // position: fixed;
+    // margin: auto;
+    // top: 0;
+    // bottom: 0;
+    // right: 0;
+    background: #333;
+    // color: #fff;
+    // width: 100%;
+    // line-height: 33vh;
+    // height: 33vh;
+}
+
+.overlay {
+    // position: absolute;
+    // width: 100%;
+    height: 4rem;
+    z-index: 2;
+}
+
+.beme-background {
+    background-image: url(/img/beme/pattern_lighter.png);
+    background-repeat: repeat;
+    height: 100%;
+    // width: 100%;
+}
+
+.beme-logo {
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+    display: block;
+    width: 50%;
+    height: 50%;
+    background: url(/img/beme/beme_logo_green.svg) no-repeat;
+    // background-size: 50%;
+    z-index: 3;
+}
+
+.sidenote {
+  right:3rem;
+  top: 3rem;
+}
+
+#beme {
+  display: hidden;
+}
+
+
+.no-js #nav { display: block; }
+
+.js #nav { display: none; }
