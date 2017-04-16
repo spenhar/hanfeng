@@ -1,5 +1,5 @@
 body.lightning {
-  background: url(img/hf-studio.jpg) no-repeat 80% center fixed;
+  background: url("{{ site.baseurl }}/img/hf-studio.jpg") no-repeat 80% center fixed;
   background-size: cover;
   background-color: black;
 }
