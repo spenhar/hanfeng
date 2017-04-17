@@ -1,6 +1,6 @@
 # Site settings
 title: Han Feng
-email: design@hanfeng.com
+email: hanfeng@hanfeng.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal website of Designer Han Feng
 baseurl: "/hanfeng" # the subpath of your site, e.g. /blog/
